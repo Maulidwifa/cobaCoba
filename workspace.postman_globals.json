@@ -1,0 +1,999 @@
+{
+	"id": "b7a45145-62b5-4e87-8e4c-05d4d1eb7309",
+	"values": [
+		{
+			"key": "produkMerkId",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "namaProduk",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "length",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Width",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "height",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "UnitWeight",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Weight",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "UnitCubication",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "ProductDescription",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "unitWeights_shortName",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "unitWeights_fullName",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "unitWeights_unitWeightId",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "unitCubications_unitCubicationId",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "unitCubications_shortName",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_projectId_menungguPersetujuan",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_projectName_menungguPersetujuan",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_projectId_terjadwal",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_projectName_terjadwal",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_projectId_persetujuanAnggaran",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_projectName_persetujuanAnggaran",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_projectId_aktif",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_projectName_aktif",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "randomEndDate",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "randomPhoneNumber",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "userId_createUserManagement",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "name_createUserManagement",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "position_createUserManagement",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "hpNumber_createUserManagement",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "email_createUserManagement",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "randomSite_UserId",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "randomSite_Name",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "randomSite_hpNumber",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "randomSite_email",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "randomSite_position",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "access_token",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "siteUserId_PICadmin",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "picadminName",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "picadminHpNumber",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "picadminEmail",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "picmanagerName",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "picmanagerHpNumber",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "picmanagerEmail",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "userCode_SCM",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "userCode",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "picadminUserId",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "picmanagerUserId",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "picfinanceUserId",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "testAUserId",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "testAName",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "testAHpNumber",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "testAEmail",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "UserSiteBBUserId",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "UserSiteBBName",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "UserSiteBBHpNumber",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "UserSiteBBEmail",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "projectId_ProsesEvaluasi",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "userId_site",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "SiteRandom_hpNumber",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "SiteRandom_email",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "detailProjectNameActive_toPersetujuanAnggaran",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "detailAddressActive_toPersetujuanAnggaran",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "detailStartDateActive_toPersetujuanAnggaran",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "detailEndDateActive_toPersetujuanAnggaran",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "detailBudgetActive_toPersetujuanAnggaran",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "detailPICAdminActive_toPersetujuanAnggaran",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "detailPICManagerActive_toPersetujuanAnggaran",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "ProjectEvaluasiAnggaran",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "evaluasiAnggaran_toPersetujuanAnggaran",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_projectId_dibatalkan",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_projectName_dibatalkan",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "randomEndDate_Quo",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "randomNeedDate_Quo",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "sellingAgent",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "detailPICFinanceActive_toPersetujuanAnggaran",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "kecIDdetailActive_toPersetujuanAnggaran",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "kabIDdetailActive_toPersetujuanAnggaran",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "provIDdetailActive_toPersetujuanAnggaran",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "randomPcs",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "quotationId_menungguPersetujuan",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_quotationId_menungguPersetujuan",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_quotationName_menungguPersetujuan",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "rangeTanggal_kurangDari7Hari",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_quotationId_ditolak",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_quotationName_ditolak",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_quotationId_penawaranHarga",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_quotationName_penawaranHarga",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_quotationId_dibatalkan",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_quotationName_dibatalkan",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "vendorBarang",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "QuotationTerbukaID_VendorBarang",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "quotationDetailId_vendorBarang",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "TOPvendorItemId",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "qtyProduk_vendorBarang",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "EstimateDelivery",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "randomPrice_offeringQuotation",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "randomOngkir",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "creditSellingAgentID",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "TOPsellingAgentId",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "TOPdaySellingAgent",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "projectID_byCreditSellingAgentId",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_statusCredit_pengajuan",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_CreditCard_projectName",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "quotationId",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "VendorUnder_sellingAgent",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "quotationDetailId_1",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "quotationDetailId_2",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "quotationDetailId_3",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "quotationDetailId_4",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "quotationDetailId_5",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "priceOffering",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "creditLimit",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "quotationDetailId_6",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "quotationDetailId_7",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "quotationDetailId_8",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "quotationDetailId_9",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "quotationDetailId_10",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "quotationDetailId_11",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "quotationDetailId_12",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "random_quotationOfferItemID",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "PriceNego",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "totalPriceBuyer",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "TOPofferBuyer",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "AdditionalPrice",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_QuotOfferItemDetailID_AVL",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "quotationDetailId_13",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "quotationDetailId_14",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "quotationDetailId_15",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "quotationDetailId_16",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "quotationDetailId_17",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "quotationDetailId_18",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "QTY1",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "QTY2",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "QTY3",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "QTY4",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_projectId_prosesEvaluasi",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_projectName_prosesEvaluasi",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_projectId_evaluasiAnggaran",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_projectName_evaluasiAnggaran",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "quotationId_ditolak",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "estimasiDelivery",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "deliveryCost",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "random_CreditDetailTOP_sellingAgentID",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "random_CreditDetailTOP_termOfPayment",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "random_CreditDetailTOP_additionalPrice",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_PriceBuyer",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_TotalPriceBuyer",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "QTY5",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "QTY6",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "QTY7",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "QTY8",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "pengajuan_creditLimit",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_creditSellingAgentId",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_creditAktif_creditSellingAgentId",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Random_creditAktif_projectName",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "creditAktif_creditLimit",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "quotationId_offering",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "quotationName_offering",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "VendorUnder_sellingAgentId",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "VendorUnder_sellingAgentName",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "projectId_OnsellingAgent",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "QTY9",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "produkAvailable_bySellingAgent",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "produkName_bySellingAgent",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "produkAvailableQTY_bySellingAgent",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "totalPrice",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"name": "Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2025-01-24T03:07:04.006Z",
+	"_postman_exported_using": "Postman/11.29.4"
+}
