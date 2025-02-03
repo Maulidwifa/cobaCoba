@@ -1,0 +1,125 @@
+name: Postman Test Runner
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  postman-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Langkah 1: Checkout kode dari repo
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Langkah 2: Setup Node.js untuk install Newman
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      # Langkah 3: Install dependencies (Newman dan SendGrid)
+      - name: Install Newman dan SendGrid
+        run: |
+          npm install -g newman sendgrid
+
+      # Langkah 4: Setup Python dan install dependencies (untuk SendGrid)
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install sendgrid
+
+      # Langkah 5: Jalankan Newman untuk tes dan buat laporan
+      - name: Run Newman tests
+        run: |
+          newman run User_Management.postman_collection.json \
+          --environment Dev.postman_environment.json \
+          --reporters cli,json \
+          --reporter-json-export newman-report.json
+
+      # Langkah 6: Kirim email dengan hasil tes (menggunakan script Python)
+      - name: Kirim email hasil tes
+        run: |
+          python3 -c "
+import json
+import sendgrid
+from sendgrid.helpers.mail import Mail, Email, To, Content
+
+# Fungsi untuk membaca laporan JSON dan menentukan status serta nama tes
+def determine_status_and_name(report_file):
+    try:
+        with open(report_file, 'r') as f:
+            result = json.load(f)
+
+        # Mengambil nama tes dan statusnya
+        name = result['collection']['item'][0].get('name')
+        passed = result['run']['stats']['assertions'].get('passed', 0)
+        failed = result['run']['stats']['assertions'].get('failed', 0)
+
+        # Menentukan status berdasarkan jumlah assertion yang gagal
+        if failed > 0:
+            status = 'Test Failed'
+            result_detail = 'There are failed tests.'
+        else:
+            status = 'Success'
+            result_detail = 'All tests passed successfully. (Manual)'
+
+        return status, result_detail, name
+
+    except Exception as e:
+        print(f"Error reading report file: {e}")
+        return None, None, None
+
+# Fungsi untuk mengirim email menggunakan SendGrid
+def send_email(status, result_detail, name):
+    # API Key SendGrid
+    SENDGRID_API_KEY = '${{ secrets.SENDGRID_API_KEY }}'
+    SENDER_EMAIL = 'maulidwifairuz@gmail.com'
+    RECIPIENT_EMAIL = 'maulidwifairuz@gmail.com'
+    # Membuat objek sendgrid client
+    sg = sendgrid.SendGridAPIClient(api_key=SENDGRID_API_KEY)
+
+    # Membuat objek Mail
+    from_email = Email(SENDER_EMAIL)
+    to_email = To(RECIPIENT_EMAIL)
+    subject = f"Postman Test Results for {name}"
+    content = Content("text/plain", f"The Postman tests for : {name} have completed. \nStatus: {status}. \nDetails: {result_detail}")
+
+    # Mengirimkan email
+    mail = Mail(from_email, to_email, subject, content)
+
+    # Mengirimkan email dan memeriksa statusnya
+    response = sg.send(mail)
+    print(f"Email sent! Status code: {response.status_code}")
+    print(f"Response body: {response.body}")
+    print(f"Response headers: {response.headers}")
+
+# Main program
+def main():
+    # Menentukan status, detail error, dan nama tes dari laporan
+    status, result_detail, name = determine_status_and_name('newman-report.json')
+
+    if status and result_detail and name:
+        print(f"Test status: {status}")
+        print(f"Result details: {result_detail}")
+        print(f"Test name: {name}")
+
+        # Kirim email dengan hasil tes
+        send_email(status, result_detail, name)
+    else:
+        print("Error: Could not determine the test status or test name.")
+
+# Jalankan program utama
+if __name__ == '__main__':
+    main()
+        "
