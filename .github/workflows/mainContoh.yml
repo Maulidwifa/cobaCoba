@@ -47,7 +47,54 @@ jobs:
           --reporters cli,json \
           --reporter-json-export newman-report.json
 
-      # Langkah 6: Kirim email dengan hasil tes (menggunakan skrip Python)
-      - name: Kirim email hasil tes
+      - name: Set status message based on Newman result
+        id: status_message
         run: |
-          python3 userManagement.py
+          # Cek apakah file `newman-report.json` ada
+          if [ -f newman-report.json ]; then
+            RESULT=$(cat newman-report.json)
+            PASSED=$(echo $RESULT | jq '.run.stats.assertions.passed')
+            FAILED=$(echo $RESULT | jq '.run.stats.assertions.failed')
+
+            if [ "$FAILED" -gt 0 ]; then
+              # Jika ada test yang gagal, tampilkan pesan error
+              STATUS="Test Failed"
+              ERROR_DETAILS=$(echo $RESULT | jq '.run.failures')
+            else
+              # Jika semua test berhasil, tampilkan pesan success
+              STATUS="Success"
+              ERROR_DETAILS="All tests passed successfully."
+            fi
+
+            # Simpan status dan detail error
+            echo "STATUS=$STATUS" >> $GITHUB_ENV
+            echo "ERROR_DETAILS=$ERROR_DETAILS" >> $GITHUB_ENV
+          else
+            echo "Error: File newman-report.json not found!"
+            exit 1
+          fi
+
+      - name: Send email notification via SendGrid
+        run: |
+          response=$(curl -X POST https://api.sendgrid.com/v3/mail/send \
+            -H "Authorization: Bearer ${{ secrets.MAULID_APIKEYSENDGRID }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+                  "personalizations": [
+                    {
+                      "to": [{"email": "maulidwifairuz@gmail.com"}],
+                      "subject": "Postman Test Results"
+                    }
+                  ],
+                  "from": {"email": "${{ secrets.SENDGRID_EMAIL }}"},
+                  "content": [
+                    {
+                      "type": "text/plain",
+                      "value": "The Postman tests have completed. Status: ${{ env.STATUS }}. Details: ${{ env.ERROR_DETAILS }}"
+                    }
+                  ]
+                }')
+      
+          echo "Response from SendGrid: $response"
+          # Jika perlu, tampilkan status code HTTP
+          echo "HTTP Status Code: $(echo $response | jq -r '.statusCode')"
