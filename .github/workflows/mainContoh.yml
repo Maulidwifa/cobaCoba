@@ -49,12 +49,12 @@ jobs:
 
       - name: Debug if `newman-report.json` exists
         run: |
-          if [ -f newman-report.json ]; then
-            echo "File newman-report.json exists"
-            cat newman-report.json
-          else
-            echo "File newman-report.json does not exist!"
-          fi
+          # if [ -f newman-report.json ]; then
+          #   echo "File newman-report.json exists"
+          #   cat newman-report.json
+          # else
+          #   echo "File newman-report.json does not exist!"
+          # fi
 
       - name: Set status message based on Newman result
         id: status_message
