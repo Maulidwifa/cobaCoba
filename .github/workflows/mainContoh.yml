@@ -23,11 +23,6 @@ jobs:
         with:
           node-version: '16'
 
-      # Langkah 3: Install dependencies (Newman dan SendGrid)
-      # - name: Install Newman dan SendGrid
-      #   run: |
-      #     npm install -g newman sendgrid
-
       # Langkah 4: Setup Python dan install dependencies (untuk SendGrid)
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -46,15 +41,6 @@ jobs:
           --environment Dev.postman_environment.json \
           --reporters cli,json \
           --reporter-json-export newman-report.json
-
-      - name: Debug if `newman-report.json` exists
-        run: |
-          # if [ -f newman-report.json ]; then
-          #   echo "File newman-report.json exists"
-          #   cat newman-report.json
-          # else
-          #   echo "File newman-report.json does not exist!"
-          # fi
 
       - name: Set status message based on Newman result
         id: status_message
@@ -99,7 +85,7 @@ jobs:
                   "content": [
                     {
                       "type": "text/plain",
-                      "value": "The Postman tests have completed. Status: ${{ env.STATUS }}. Details: ${{ env.ERROR_DETAILS }}"
+                      "value": "The Postman tests have completed. Status: ${{ env.STATUS }}.\nDetails: ${{ env.ERROR_DETAILS }}"
                     }
                   ]
                 }')
